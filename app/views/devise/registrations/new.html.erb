@@ -1,6 +1,8 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h1>Sign up</h1>
+		<div class="panel-title">
+			<h1>Sign up</h1>
+		</div><!-- .panel-title -->
 	</div><!-- .panel-heading -->
 
 	<div class="panel-body">
@@ -8,22 +10,22 @@
 		  <%= devise_error_messages! %>
 
 		  <div class="form-group">
-			  <div><%= f.label :email %><br />
-			  <%= f.email_field :email, :autofocus => true, class: "form-control" %></div>
+			  <%= f.label :email %>
+			  <%= f.email_field :email, :autofocus => true, class: "form-control" %>
 		  </div><!-- .form-group -->
 
 		  <div class="form-group">
-			  <div><%= f.label :password %><br />
-			  <%= f.password_field :password, class: "form-control" %></div>
+			  <%= f.label :password %>
+			  <%= f.password_field :password, class: "form-control" %>
 		  </div><!-- .form-group -->	
 
 		  <div class="form-group">
-		    <div><%= f.label :password_confirmation %><br />
-		    <%= f.password_field :password_confirmation, class: "form-control" %></div>
+		    <%= f.label :password_confirmation %>
+		    <%= f.password_field :password_confirmation, class: "form-control" %>
 		  </div><!-- .form-group -->
 
 		  <div class="form-group">  
-		    <div><%= f.submit "Sign up", class: "btn btn-primary" %></div>
+		    <%= f.submit "Sign up", class: "btn btn-primary" %>
 		  </div><!-- .form-group -->
 
 		<% end %>
